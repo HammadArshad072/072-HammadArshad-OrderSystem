@@ -1,0 +1,22 @@
+﻿@model _072_HammadArshad_OrderSystem.Models.OrderModel
+
+<div class="container">
+    <section class="form-card shadow my-3">
+        <div class="container text-center">
+            <div class="image-portion">
+                <img class="img-fluid" src="@Model.ImageSource" alt="Person Image">
+            </div>
+            <div class="details-portion">
+                <h3>@Model.Name</h3>
+                <p>@Model.Description</p>
+                <h6><span class="text-danger">$</span>@Model.Price</h6>
+                <h6>Total : @Model.Total</h6>
+                <div class="confirmation-msg">
+                    <p class="text-danger">Are You Sure You Wan To Delete This Order ?</p>
+                </div>
+                <a class="btn btn-outline-danger" asp-controller="Order" asp-action="DeleteOrderConfirm" asp-route-Id="@Model.Id">Delete</a>
+            </div>
+        </div>
+    </section>
+</div>
+

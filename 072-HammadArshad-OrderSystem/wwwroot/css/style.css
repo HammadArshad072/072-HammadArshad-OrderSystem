@@ -1,0 +1,97 @@
+﻿*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+}
+
+.navbar {
+    background-color: white !important;
+}
+
+.navbar-toggler {
+    box-shadow: none !important;
+    outline: none !important;
+    border: 2px solid rgba(240, 128, 128, 0.5) !important;
+}
+
+.navbar .navbar-brand img {
+    width: 80px;
+    height: 50px;
+}
+
+.navbar .navbar-collapse .navbar-nav .nav-item {
+    padding: 0 10px;
+}
+
+    .navbar .navbar-collapse .navbar-nav .nav-item .nav-link {
+        font-weight: 500;
+    }
+
+        .navbar .navbar-collapse .navbar-nav .nav-item .nav-link:hover {
+            color: lightcoral;
+        }
+
+.navbar .navbar-collapse .navbar-nav .dropdown:hover .dropdown-menu {
+    display: block !important;
+}
+
+.navbar .navbar-collapse .navbar-nav .active {
+    color: lightcoral;
+}
+
+
+
+.option-choose{
+    padding:10px 0;
+    margin:10px 0;
+}
+    .option-choose .row .col-6 a {
+        width: 100%;
+        height: 100%;
+    }
+
+.order-btn{
+    margin:10px 0;
+}
+.order-btn input{
+    width:100%;
+}
+
+.form-card {
+    text-align: center;
+    margin: 0 auto;
+    border: 1px solid lightgray;
+    max-width: 500px;
+    border-radius: 8px;
+    padding: 20px 0;
+}
+
+    .form-card .image-portion img {
+        width: 200px;
+        height:200px;
+        object-fit:contain;
+    }
+
+    .form-card .details-portion a {
+        background-color: white !important;
+        color: lightcoral;
+        border-color: lightcoral !important;
+        transition: 0.4s;
+        width: 100px;
+    }
+   /* .form-card .details-portion p{
+
+    }*/
+
+        .form-card .details-portion a:hover {
+            background-color: lightcoral !important;
+            color: white;
+            box-shadow: 0 0 0 0.25rem rgba(240, 128, 128, 0.1) !important;
+        }
+
+        .update-btn{
+            margin:15px 0;
+        }
+.update-btn input{
+    width:100%;
+}

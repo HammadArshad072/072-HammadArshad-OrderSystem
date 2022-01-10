@@ -1,0 +1,31 @@
+﻿@using _072_HammadArshad_OrderSystem.Models
+@model List<OrderModel>
+
+<div class="container py-3 my-3">
+    <a class="btn btn-dark bg-gradient" asp-controller="Order" asp-action="CreateOrder">Add Order</a>
+    <div class="table-responsive my-2">
+        <table class="table table-bordered text-center">
+            <tr>
+                <th>@Html.DisplayName("Name")</th>
+                <th>@Html.DisplayName("Quantity")</th>
+                <th>@Html.DisplayName("Price")</th>
+                <th>@Html.DisplayName("Total")</th>
+                <th>View</th>
+                <th>Edit</th>
+                <th>Delete</th>
+            </tr>
+            @foreach(OrderModel orders in Model)
+            {
+                <tr>
+                    <td>@orders.Name</td>
+                    <td>@orders.Quantity</td>
+                    <td>@orders.Price</td>
+                    <td>@orders.Total</td>
+                    <td><a class="btn btn-outline-primary" asp-controller="Order" asp-action="ViewOrder" asp-route-Id="@orders.Id">View</a></td>
+                    <td><a class="btn btn-outline-secondary" asp-controller="Order" asp-action="UpdateOrder" asp-route-Id="@orders.Id">Edit</a></td>
+                    <td><a class="btn btn-outline-danger" asp-controller="Order" asp-action="DeleteOrder" asp-route-Id="@orders.Id">Delete</a></td>
+                </tr>
+            }
+        </table>
+    </div>
+</div>

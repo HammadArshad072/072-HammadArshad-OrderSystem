@@ -1,0 +1,20 @@
+﻿@model _072_HammadArshad_OrderSystem.Models.OrderModel
+@{ 
+    var totalprice = Model.Price * Model.Quantity;
+}
+<div class="container">
+    <section class="form-card shadow my-3">
+        <div class="container text-center">
+            <div class="image-portion">
+                <img class="img-fluid" src="@Model.ImageSource" alt="Person Image">
+            </div>
+            <div class="details-portion">
+                <h3>@Model.Name</h3>
+                <p>@Model.Description</p>
+                <h6><span class="text-danger">$</span>@Model.Price</h6>
+                <h6>Total : @totalprice</h6>
+                <a class="btn btn-success" asp-controller="Order" asp-action="index">Go Back</a>
+            </div>
+        </div>
+    </section>
+</div>
